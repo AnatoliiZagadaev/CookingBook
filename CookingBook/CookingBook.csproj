@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\IsFavoriteFalse.png" />
+    <None Remove="Resources\IsfavoriteHover.png" />
+    <None Remove="Resources\IsFavoriteTrue.png" />
+    <None Remove="Resources\RemoveButton.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\IsFavoriteFalse.png" />
+    <Resource Include="Resources\IsfavoriteHover.png" />
+    <Resource Include="Resources\IsFavoriteTrue.png" />
+    <Resource Include="Resources\RemoveButton.png" />
+  </ItemGroup>
+
+</Project>
